@@ -41,7 +41,7 @@ public class QuotesListActivity extends ListActivity {
         protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                 tv = new TextView(this);
-                tv.setText("List of Famous Quotes");
+                tv.setText("List of ProTips");
                 tv.setGravity(Gravity.CENTER);
                 getListView().addHeaderView(tv);
                 new QuotesListAsyncTask(this).execute();
@@ -58,7 +58,7 @@ public class QuotesListActivity extends ListActivity {
                   protected void onPreExecute(){ 
                      super.onPreExecute();
                           pd = new ProgressDialog(context);
-                          pd.setMessage("Retrieving Quotes...");
+                          pd.setMessage("Retrieving ProTips...");
                           pd.show();    
                   }
  
@@ -69,7 +69,7 @@ public class QuotesListActivity extends ListActivity {
                                 Quoteendpoint service =  builder.build();
                                 quotes = service.listQuote().execute();
                     } catch (Exception e) {
-                      Log.d("Could not retrieve Quotes", e.getMessage(), e);
+                      Log.d("Could not retrieve ProTips", e.getMessage(), e);
                     }
                     return quotes;
                   }
