@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PROTIPS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="lblListQuotes">List ProTips</string>
+    <string name="lbl_AddQuote">Add ProTip</string>
+    <string name="lbl_AboutApp">About App</string>
+    <string name="lbl_Add">Add</string>
+    
+    <string name="lbl_AuthorName">Author Name</string>
+    <string name="lbl_Message">Message</string>
+
+</resources>
