@@ -69,7 +69,7 @@ public class AddQuoteActivity extends Activity {
                   protected void onPreExecute(){ 
                      super.onPreExecute();
                           pd = new ProgressDialog(context);
-                          pd.setMessage("Adding the Quote...");
+                          pd.setMessage("Adding the ProTip...");
                           pd.show();    
                   }
  
@@ -83,7 +83,7 @@ public class AddQuoteActivity extends Activity {
                                 quote.setMessage(params[1]);
                                 response = service.insertQuote(quote).execute();
                     } catch (Exception e) {
-                      Log.d("Could not Add Quote", e.getMessage(), e);
+                      Log.d("Could not Add ProTip", e.getMessage(), e);
                     }
                     return response;
                   }
