@@ -1,31 +1,17 @@
 package com.protips6.android;
 
-import java.io.IOException;
-import java.util.List;
-
-
- 
-import com.google.api.client.extensions.android.http.AndroidHttp;
-import com.google.api.client.json.gson.GsonFactory;
-import com.protips6.R;
-import com.protips6.entity.quoteendpoint.Quoteendpoint;
-import com.protips6.entity.quoteendpoint.model.CollectionResponseQuote;
-import com.protips6.entity.quoteendpoint.model.Quote;
- 
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.Toast;
- 
+
+import com.protips6.R;
+
 public class MainActivity extends Activity {
         
         @Override
